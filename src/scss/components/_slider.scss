@@ -1,0 +1,96 @@
+.slider {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    z-index: 3;
+
+    // &__button-next,
+    // &__button-prev {
+    //     position: absolute;
+    //     top: 50%;
+    //     // width: 4rem;
+    //     // height: 4rem;
+    //     // border-radius: 50%;
+    //     // margin-top: -2rem;
+    //     // z-index: 10;
+    //     // cursor: pointer;
+    //     // background-color: $primary-color--dark;
+    //     // display: flex;
+    //     // align-items: center;
+    //     // justify-content: center;
+    // }
+
+    .slider-control-button--next {
+        right: 1rem;
+        left: auto;
+    }
+
+    .slider-control-button--prev {
+        left: 1rem;
+        right: auto;
+    }
+
+}
+
+
+.slider__slides {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+
+
+    &__img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: center;
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: -5rem;
+        left: 13rem;
+        background-color: #007944;
+        padding: 3rem;
+        width: 40rem;
+        z-index: 5;
+        box-shadow: 10px 10px 0px 0px #7ABE60;
+
+        @include respond(small) {
+            width: 100%;
+            left: 0;
+            box-shadow: 0px 0px 0px 0px transparent;
+        }
+
+
+    }
+
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: #FFF46B;
+        margin-bottom: 1rem;
+        z-index: 5;
+    }
+
+
+    &__description {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #EBEEF2;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.5;
+        z-index: 5;
+    }
+
+
+
+}

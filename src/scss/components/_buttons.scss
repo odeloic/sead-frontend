@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    text-transform: uppercase;
+    font-family: $font-text;
+    font-weight: 700;
+    font-size: 1.4rem;
+    outline: 0;
+    border: none;
+    transition: all .2s ease;
+
+
+    &--primary {
+        color: $accent-color--primary;
+        background-color: $secondary-color;
+
+        &:hover {
+            color: #fff;
+            background-color: $accent-color--secondary;
+            transform: translateY(-3px);
+        }
+
+        &:focus {
+            transform: translateY(-3px);
+        }
+    }
+}

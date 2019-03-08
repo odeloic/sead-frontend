@@ -1,0 +1,52 @@
+.section {
+    margin: 0;
+    width: 100%;
+
+    &--padded {
+        padding: 3.5rem 0;
+    }
+
+    &--blue {
+        background-color: $secondary-color;
+    }
+
+
+    &--activities {
+        padding-bottom: 20rem;
+
+        @include respond(small) {
+            padding-bottom: 8rem;
+        }
+
+    }
+
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+
+    @include respond(medium) {
+        max-width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @include respond(small) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+.container--tight {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.news-section {
+    padding: 4rem 4rem 4rem 14rem;
+
+    @include respond(medium) {
+        padding: 4rem 4rem 4rem 8rem;
+    }
+}

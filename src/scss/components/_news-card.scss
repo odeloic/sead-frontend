@@ -1,0 +1,21 @@
+.news-card {
+    &__thumbnail {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $secondary-color;
+        margin-bottom: 1.8rem;
+        line-height: 1.6;
+        text-transform: capitalize;
+    }
+
+    &__date {
+        font-family: $font-headings;
+        color: $gray-color--dark;
+    }
+}

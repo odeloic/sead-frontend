@@ -1,0 +1,127 @@
+.locations {
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .location {
+        flex-basis: 50%;
+    }
+}
+
+.location {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $gray-color--dark;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        z-index: 1;
+        transition: opacity .3s ease;
+    }
+
+    &:hover::after {
+        opacity: .8;
+    }
+
+    &__data {
+        display: none;
+
+    }
+
+    &__name {
+        position: absolute;
+        color: $accent-color--primary;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        z-index: 5;
+        transform: scale(1);
+        transition: transform .3s ease;
+    }
+
+    &:hover &__name {
+        transform: scale(1.2);
+    }
+
+    &--north-west {
+        background-color: orangered;
+        border-radius: 100% 0 0 0;
+
+        &::after {
+            border-radius: 100% 0 0 0;
+        }
+
+        @include location-name-position(60%, 30%);
+    }
+
+    &--north-east {
+        background-color: yellowgreen;
+        border-radius: 0 100% 0 0;
+
+        &::after {
+            border-radius: 0 100% 0 0
+        }
+
+
+        @include location-name-position(60%, 25%);
+
+    }
+
+    &--south-west {
+        background-color: goldenrod;
+        border-radius: 0 0 0 100%;
+
+        &::after {
+            border-radius: 0 0 0 100%;
+        }
+
+        @include location-name-position(40%, 35%);
+    }
+
+    &--south-east {
+        background-color: violet;
+        border-radius: 0 0 100% 0;
+
+        &::after {
+            border-radius: 0 0 100% 0;
+        }
+
+        @include location-name-position(40%, 20%);
+    }
+}
+
+
+.details-placeholder {
+    padding: 4.5rem 3.5rem;
+    background-color: $light-blue;
+    text-align: center;
+    transition: all 1s ease;
+    margin-top: 5rem;
+    text-align: left;
+
+
+    h4 {
+        color: $gray-color--dark;
+        font-size: 1.3rem;
+        margin-bottom: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    span {
+        color: $alternative-green;
+        font-family: $font-headings;
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+        display: inline-block;
+    }
+
+}

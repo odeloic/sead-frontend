@@ -1,0 +1,27 @@
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(small) {
+        margin-top: 5rem;
+        justify-content: center;
+    }
+}
+
+.partner__logo {
+    flex-basis: 20%;
+    margin-bottom: 5rem;
+    margin-right: 3rem;
+
+    @include respond(small) {
+        margin-bottom: 8rem;
+        flex-basis: 26%;
+
+    }
+
+
+    img {
+        width: 80%;
+        object-fit: cover;
+    }
+}

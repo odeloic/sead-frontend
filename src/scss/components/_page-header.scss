@@ -1,0 +1,33 @@
+.page-header {
+    height: 65vh;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $gray-color--dark;
+        opacity: .7;
+        z-index: 1;
+    }
+
+    &__cover {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__title {
+        position: absolute;
+        top: 10rem;
+        left: 13rem;
+        z-index: 5;
+        color: $accent-color--primary;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+}

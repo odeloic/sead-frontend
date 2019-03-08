@@ -1,0 +1,44 @@
+.overlap-images {
+    position: relative;
+    text-align: center;
+
+    @include respond(small) {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5rem;
+    }
+
+    img {
+        width: 28rem;
+        height: 30rem;
+        object-fit: cover;
+        position: absolute;
+
+        @include respond(small) {
+            height: 25rem;
+            width: 20rem;
+            position: relative;
+        }
+
+        &:nth-child(1) {
+            top: 0;
+            left: 0;
+
+            @include respond(small) {
+                top: auto;
+                left: auto;
+                margin-right: 5rem;
+            }
+        }
+
+        &:nth-child(2) {
+            top: 10rem;
+            left: 15rem;
+
+            @include respond(small) {
+                top: auto;
+                left: auto;
+            }
+        }
+    }
+}
