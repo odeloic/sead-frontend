@@ -1,3 +1,7 @@
+@mixin font-smoothing($value: antialiased) {
+    -webkit-font-smoothing: $value;
+}
+
 @mixin location-name-position($topOffset, $leftOffset) {
     .location__name {
         top: $topOffset;

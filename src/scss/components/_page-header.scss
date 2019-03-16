@@ -2,6 +2,29 @@
     height: 65vh;
     position: relative;
 
+    &--default {
+        height: 20vh;
+        background-color: $light-blue;
+        padding: 5rem 0;
+        position: relative;
+
+        &__title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: $primary-color;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: $primary-color--dark;
+        }
+    }
+
     &::after {
         content: '';
         width: 100%;

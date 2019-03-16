@@ -1,31 +1,29 @@
 .team-box {
-    &__row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-        &--2 {
-            padding: 0 5rem;
+    &__member:nth-child(1),
+    &__member:nth-child(2) {
+        flex-basis: 35%;
 
-            .team-box__member {
-                flex-basis: calc(50% - 2.5rem);
-            }
-        }
-
-        &--3 {
-
-            .team-box__member {
-                flex-basis: calc(100% / 3);
-            }
+        @include respond(small) {
+            flex-basis: 100%;
         }
     }
-
 
     &__member {
         height: 30rem;
         position: relative;
         overflow: hidden;
         cursor: pointer;
+        flex-basis: calc(100%/3);
+
+
+        @include respond(small) {
+            flex-basis: 100%;
+            margin-bottom: 5rem;
+        }
 
         &__img {
             height: 100%;

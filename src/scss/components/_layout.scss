@@ -41,6 +41,17 @@
 .container--tight {
     max-width: 80rem;
     margin: 0 auto;
+
+    @include respond(medium) {
+        max-width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @include respond(small) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
 
 .news-section {

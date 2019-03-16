@@ -1,21 +1,40 @@
 .news-card {
+    margin-bottom: 5rem;
+
     &__thumbnail {
         width: 100%;
         object-fit: cover;
         margin-bottom: 1.5rem;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        transition: transform .3s ease;
+
+
+        &:hover {
+            transform: scale(1.02);
+        }
     }
 
     &__title {
+        font-family: $font-text;
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 700;
         color: $secondary-color;
-        margin-bottom: 1.8rem;
-        line-height: 1.6;
+        margin-bottom: 1.2rem;
+        line-height: 1.3;
         text-transform: capitalize;
+        transition: color .3s ease;
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 
     &__date {
-        font-family: $font-headings;
+        font-family: $font-text;
+        font-size: 1.3rem;
         color: $gray-color--dark;
     }
+
+
 }

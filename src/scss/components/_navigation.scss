@@ -1,47 +1,62 @@
 .navigation {
-    &__item {
-        font-family: $font-headings;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        color: $primary-color;
-        transition: color .2s ease;
-        display: inline-block;
-        position: relative;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
 
 
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: $primary-color;
-            transform: scaleX(0);
-            transform-origin: 0;
-            transition: transform .3s ease;
-        }
-
-        &:not(:last-child) {
-            margin-right: 8rem;
-
-            @include respond(big) {
-                margin-right: 5rem;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: $primary-color;
+                transform: scaleX(0);
+                transform-origin: 0;
+                transition: transform .3s ease;
             }
 
-            @include respond(medium) {
-                margin-right: 3rem;
+            &:not(:last-child) {
+                margin-right: 8rem;
+
+                @include respond(big) {
+                    margin-right: 5rem;
+                }
+
+                @include respond(medium) {
+                    margin-right: 3rem;
+                }
             }
-        }
 
-        &:hover {
-            color: $secondary-color;
-        }
 
-        &:hover::after {
-            transform: scaleX(1);
+
+            &:hover::after {
+                transform: scaleX(1);
+            }
+
+            a {
+                font-family: $font-headings;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                color: $primary-color;
+                transition: color .2s ease;
+                display: inline-block;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+
+            }
         }
     }
+
+
+
 }

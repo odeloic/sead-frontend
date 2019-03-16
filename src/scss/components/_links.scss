@@ -3,8 +3,21 @@ a {
     color: inherit;
     font-family: inherit;
 
+
     &:focus {
         outline: none;
     }
 
+}
+
+.link {
+    transition: all .3s ease-in;
+
+    &--goto {
+        font-family: $font-headings;
+        color: $secondary-color;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
 }

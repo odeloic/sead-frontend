@@ -26,18 +26,26 @@
     }
 
     &__nav {
-        &__item {
-            display: block;
-            font-family: $font-headings;
-            color: #fff;
-            font-size: 1.3rem;
-            color: $light-green;
+        ul {
+            list-style: none;
 
-            &:not(:last-child) {
-                margin-bottom: 2rem;
+            li {
+                display: block;
+
+                a {
+                    font-family: $font-headings;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    color: $light-green;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
             }
-
         }
+
+
     }
 
     &__heading {
