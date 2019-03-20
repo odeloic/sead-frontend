@@ -34,7 +34,25 @@
         font-family: $font-text;
         font-size: 1.3rem;
         color: $gray-color--dark;
+        margin-right: 2rem;
     }
+    
+    &__source {
+        font-size: 1.1rem;
+        color: $gray-color--dark;
+        font-family: $font-headings;
+    }
+    
+    &--press &__title {
+        font-family: $font-headings;
+    }
+    
+    p {
+         margin-bottom: 1.5rem; 
+        line-height: 1.8;
+    }
+    
+    
 
 
 }

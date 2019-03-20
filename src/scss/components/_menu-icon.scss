@@ -1,0 +1,78 @@
+.menu-icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: $primary-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 5rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    visibility: hidden;
+    
+    @include respond(small) {
+        visibility: visible;
+    }
+
+    /* menu icon bars */
+
+    &__bars {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+
+        &:hover &__middle {
+            transform: scale(.9);
+        }
+
+
+        &__top,
+        &__middle,
+        &__bottom {
+            width: 2rem;
+            height: 3px;
+            background-color: $light-green;
+            border-radius: 1px;
+            transform-origin: 0 0;
+            position: absolute;
+            transition: transform .1s ease;
+        }
+
+        &__top {
+            top: 0;
+            left: 0;
+        }
+
+        &__middle {
+            top: 7px;
+            left: 0;
+        }
+
+        &__bottom {
+            top: 14px;
+            left: 0;
+        }
+
+    }
+
+
+    &.mobile-menu-open {
+        .menu-icon__bars {
+            &__top {
+                transform: rotate(45deg) scaleX(1.25);
+            }
+            
+            &__middle {
+                opacity: 0;
+            }
+
+            &__bottom {
+                transform: rotate(-45deg) scaleX(1.2) translateX(-2px);
+
+            }
+        }
+    }
+}
