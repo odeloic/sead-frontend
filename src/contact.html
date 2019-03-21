@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SEAD - Blog</title>
+    <title>SEAD - Media</title>
     <link rel="stylesheet" href="./css/bundle.css">
 </head>
 
@@ -83,75 +83,79 @@
             </form>
         </div>
     </header>
+
+
     <!-- main -->
     <main class="main">
-        <div class="page-header--default">
-            <div class="container">
-                <h2 class="page-header--default__title">Blog</h2>
-            </div>
+        <div class="page-header">
+            <img src="./images/img2.jpg" alt="Image Header About Page SEAD Website" class="page-header__cover">
+            <h3 class="page-header__title">Contact</h3>
 
         </div>
-        <!-- page-header -->
+
         <section class="section pd-top--big pd-bottom--big">
+
             <div class="container">
-                <h2 class="heading--primary heading--green mg-bottom--big">We think what we do can benefit many
-                    people, that’s why we
-                    share insights
-                    on our work</h2>
+                <h2 class="heading--secondary heading--blue text--centered mg-bottom--big">
+                    Contact
+                </h2>
+            </div><!-- container -->
 
-                <div class="columns is-multiline">
+            <div class="container--tight">
 
-                    <div class="column is-one-third">
-                        <div class="news-card">
-                            <a href="single.html" class="news-card__thumbnail-link">
-                                <img src="./images/img9.jpg" alt="" class="news-card__thumbnail">
-                            </a>
-                            <a href="single.html" class="news-card__title-link">
-                                <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
-                            </a>
-                            <span class="news-card__date">2019.01.02</span>
-                        </div>
-                    </div><!-- news article card -->
+                <form action="/" class="sd-contact-form">
 
-                    <div class="column is-one-third">
-                        <div class="news-card">
-                            <a href="single.html" class="news-card__thumbnail-link">
-                                <img src="./images/img9.jpg" alt="" class="news-card__thumbnail">
-                            </a>
-                            <a href="single.html" class="news-card__title-link">
-                                <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
-                            </a>
-                            <span class="news-card__date">2019.01.02</span>
-                        </div>
-                    </div><!-- news article card -->
+                    <div class="sd-contact-form__header">
+                        <p>Leave us a message, we will get back to you soon</p>
+                    </div><!-- contact form header -->
 
-                    <div class="column is-one-third">
-                        <div class="news-card">
-                            <a href="single.html" class="news-card__thumbnail-link">
-                                <img src="./images/img9.jpg" alt="" class="news-card__thumbnail">
-                            </a>
+                    <div class="sd-contact-form__body">
 
-                            <a href="single.html" class="news-card__title-link">
-                                <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
-                            </a>
-                            <span class="news-card__date">2019.01.02</span>
-                        </div>
-                    </div><!-- news article card -->
+                        <div class="sd-contact-form__row">
 
-                    <div class="column is-one-third">
-                        <div class="news-card">
-                            <a href="single.html" class="news-card__thumbnail-link">
-                                <img src="./images/img9.jpg" alt="" class="news-card__thumbnail">
-                            </a>
-                            <a href="single.html" class="news-card__title-link">
-                                <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
-                            </a>
-                            <span class="news-card__date">2019.01.02</span>
-                        </div>
-                    </div><!-- news article card -->
-                </div>
+                            <div class="sd-contact-form__group">
+                                <input type="text" class="sd-contact-form__input" name="fullName" required>
+                                <label for="fullName" class="sd-contact-form__label">*Full Name</label>
+                            </div><!-- input group -->
+
+                            <div class="sd-contact-form__group">
+                                <input type="email" class="sd-contact-form__input" name="yourEmail" required>
+                                <label for="yourEmail" class="sd-contact-form__label">*Email</label>
+                            </div><!-- input group -->
+
+                        </div><!-- row -->
+
+                        <div class="sd-contact-form__row">
+
+                            <div class="sd-contact-form__group">
+                                <input type="text" class="sd-contact-form__input" name="yourCompany">
+                                <label for="yourCompany" class="sd-contact-form__label">Company/Organization</label>
+                            </div><!-- input group -->
+
+                            <div class="sd-contact-form__group">
+                                <input type="number" class="sd-contact-form__input" name="yourPhoneNumber">
+                                <label for="yourPhoneNumber" class="sd-contact-form__label">Phone Number</label>
+                                <span class="sd-contact-form__helper-text">We suggest to provide a phone number if it's an urgent matter</span>
+                            </div><!-- input group -->
+
+                        </div><!-- row -->
+
+                        <div class="sd-contact-form__row">
+                            <textarea name="yourMessage" id="" cols="30" rows="10" class="sd-contact-form__textarea"></textarea>
+                        </div><!-- row -->
+
+                        <input type="submit" class="sd-contact-form__send-button" value="Send Message">
+
+                    </div><!-- contact form body -->
+
+
+
+                </form><!-- form -->
+
             </div>
         </section>
+
+
 
     </main>
     <footer class="footer ">

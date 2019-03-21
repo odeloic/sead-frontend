@@ -1,0 +1,84 @@
+.sd-contact-form {
+    padding: 0 5rem;
+    
+    /* contact form header */
+    &__header {
+        padding: 4rem 2rem;
+        background-color: $secondary-color;
+        color: #fff;
+        text-align: center;
+    }
+    
+    /* contact form row */
+    &__row {
+        margin-bottom: 4rem;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    /* form body */
+    &__body {
+        padding: 5rem;
+    }
+    
+    /* label */
+    &__label {
+        display: block;
+        margin-top: 1rem;
+        font-family: inherit;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+
+    
+    &__helper-text {
+        margin-top: .5rem;
+        display: inline-block;
+        color: $gray-color--light;
+    }
+    
+    /* form group */
+    &__group {
+        flex-basis: 49%;
+    }
+    
+    &__input,
+    &__textarea {
+        padding: 1rem 2rem;
+        border: 1px solid $secondary-color;
+        border-radius: 4px;
+        font-family: inherit;
+        width: 100%;
+        transition: box-shadow .2s ease;
+        
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 1px $secondary-color;;
+        }
+    }
+        
+    
+    &__input {
+        width: 100%;
+        
+    }
+    
+    
+    &__send-button {
+        padding: 1rem 2.5rem;
+        background-color: $secondary-color;
+        color: $accent-color--primary;
+        border: 0;
+        font-family: $font-headings;
+        
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    
+}

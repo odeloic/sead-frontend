@@ -6,6 +6,10 @@
     position: relative;
 
     display: inline-block;
+    
+    @include respond(small) {
+        width: 30rem;
+    }
 
     &__thumbnail {
         height: 100%;
