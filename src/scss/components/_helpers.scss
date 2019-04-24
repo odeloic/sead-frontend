@@ -43,3 +43,9 @@
 .bg-light-green {
     background-color: $light-green;
 }
+
+.mobile-mg-top--medium {
+    @include respond(small) {
+        margin-top: 5rem;
+    }
+}

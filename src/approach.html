@@ -11,12 +11,58 @@
 
 <body>
     <header class="header">
-        <!-- site logo -->
-        <div class="site-logo">
-            <a href="index.html">
-                <img src="./images/logo.png" alt="SEAD Logo" class="site-logo__img">
-            </a>
+        <!-- <div class="container"> -->
+        <div class="columns is-vcentered is-centered">
+            <div class="column is-one-quarter header__Logo">
+                <!-- site logo -->
+                <div class="site-logo">
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="SEAD Logo" class="site-logo__img">
+                    </a>
+                </div>
+            </div>
+            <!-- logo -->
+
+            <div class="column header__navigation">
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About sead</a>
+                        </li>
+
+                        <li>
+                            <a href="approach.html">our approach</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Media Center</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- navigation -->
+
+            <div class="column is-one-quarter header__search">
+                <div class="search">
+
+                    <form class="search__form">
+                        <input type="search" class="search__form__input" placeholder="Search 'something' on website...">
+                        <input type="submit" value="Search" class="search__form__submit">
+                    </form>
+                </div>
+            </div>
+            <!-- search-box -->
+
         </div>
+        <!-- </div> -->
+
         <!-- navigation -->
 
         <a class="menu-icon">
@@ -26,6 +72,7 @@
                 <span class="menu-icon__bars__bottom"></span>
             </div>
         </a><!-- mobile-icon -->
+
         <nav class="mobile-navigation">
             <ul>
                 <li>
@@ -48,40 +95,12 @@
                     <a href="#">Contact us</a>
                 </li>
             </ul>
-        </nav>
 
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="about.html">About sead</a>
-                </li>
-
-                <li>
-                    <a href="approach.html">our approach</a>
-                </li>
-
-                <li>
-                    <a href="#">Media Center</a>
-                </li>
-
-                <li>
-                    <a href="#">Contact us</a>
-                </li>
-            </ul>
-        </nav>
-
-
-        <div class="search">
-            <span class="search__icon"></span>
             <form class="search__form">
-                <input type="search" class="search__form__input">
-                <input type="submit" value="Search">
+                <input type="search" class="search__form__input" placeholder="Search 'something' on website...">
+                <input type="submit" value="Search" class="search__form__submit">
             </form>
-        </div>
+        </nav>
     </header>
 
 
@@ -99,7 +118,8 @@
                     <div class="column">
 
                         <div class="locations">
-                            <div class="location location--north-west" style="background-image: url(./images/img1.jpg);">
+                            <div class="location location--north-west"
+                                style="background-image: url(./images/img1.jpg);">
                                 <h3 class="location__name">
                                     North/Western PROVINCE
                                 </h3>
@@ -110,7 +130,8 @@
                                         incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
                             </div>
-                            <div class="location location--north-east" style="background-image: url(./images/img3.jpg);">
+                            <div class="location location--north-east"
+                                style="background-image: url(./images/img3.jpg);">
                                 <h3 class="location__name">
                                     Eastern PROVINCE
                                 </h3>
@@ -121,7 +142,8 @@
                                         incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
                             </div>
-                            <div class="location location--south-west" style="background-image: url(./images/img4.jpg);">
+                            <div class="location location--south-west"
+                                style="background-image: url(./images/img4.jpg);">
                                 <h3 class="location__name">
                                     All Provinces
                                 </h3>
@@ -132,7 +154,8 @@
                                         incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
                             </div>
-                            <div class="location location--south-east" style="background-image: url(./images/img5.jpg);">
+                            <div class="location location--south-east"
+                                style="background-image: url(./images/img5.jpg);">
                                 <h3 class="location__name">
                                     South Eastern PROVINCE
                                 </h3>

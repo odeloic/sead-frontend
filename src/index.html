@@ -11,21 +11,68 @@
 
 <body>
     <header class="header">
-        <!-- site logo -->
-        <div class="site-logo">
-            <a href="index.html">
-                <img src="./images/logo.png" alt="SEAD Logo" class="site-logo__img">
-            </a>
+        <!-- <div class="container"> -->
+        <div class="columns is-vcentered is-centered">
+            <div class="column is-one-quarter header__Logo">
+                <!-- site logo -->
+                <div class="site-logo">
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="SEAD Logo" class="site-logo__img">
+                    </a>
+                </div>
+            </div>
+            <!-- logo -->
+
+            <div class="column header__navigation">
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About sead</a>
+                        </li>
+
+                        <li>
+                            <a href="approach.html">our approach</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Media Center</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- navigation -->
+
+            <div class="column is-one-quarter header__search">
+                <div class="search">
+
+                    <form class="search__form">
+                        <input type="search" class="search__form__input" placeholder="Search 'something' on website...">
+                        <input type="submit" value="Search" class="search__form__submit">
+                    </form>
+                </div>
+            </div>
+            <!-- search-box -->
+
         </div>
+        <!-- </div> -->
+
         <!-- navigation -->
-        
+
         <a class="menu-icon">
-           <div class="menu-icon__bars">
-               <span class="menu-icon__bars__top"></span>
-               <span class="menu-icon__bars__middle"></span>
-               <span class="menu-icon__bars__bottom"></span>
-           </div>
-        </a><!-- mobile-icon --> 
+            <div class="menu-icon__bars">
+                <span class="menu-icon__bars__top"></span>
+                <span class="menu-icon__bars__middle"></span>
+                <span class="menu-icon__bars__bottom"></span>
+            </div>
+        </a><!-- mobile-icon -->
+
         <nav class="mobile-navigation">
             <ul>
                 <li>
@@ -48,40 +95,12 @@
                     <a href="#">Contact us</a>
                 </li>
             </ul>
-        </nav>
-        
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
 
-                <li>
-                    <a href="about.html">About sead</a>
-                </li>
-
-                <li>
-                    <a href="approach.html">our approach</a>
-                </li>
-
-                <li>
-                    <a href="#">Media Center</a>
-                </li>
-
-                <li>
-                    <a href="#">Contact us</a>
-                </li>
-            </ul> 
-        </nav>
-
-
-        <div class="search">
-            <span class="search__icon"></span>
             <form class="search__form">
-                <input type="search" class="search__form__input">
-                <input type="submit" value="Search">
+                <input type="search" class="search__form__input" placeholder="Search 'something' on website...">
+                <input type="submit" value="Search" class="search__form__submit">
             </form>
-        </div>
+        </nav>
     </header>
 
     <!-- main -->
@@ -113,7 +132,7 @@
 
                 <!-- slide -->
                 <div class="slide swiper-slide">
-                    <img src="./images/img6--1260x800.jpg" alt="" class="slide__img">
+                    <img src="./images/img6.jpg" alt="" class="slide__img">
                     <div class="slide__caption">
                         <h3 class="slide__title">Strengthening Education</h3>
                         <p class="slide__description">
@@ -150,12 +169,13 @@
                             initiative for capacity development in higher education (NICHE) programme </p>
                         <a href="about.html" class="btn btn--primary">Read our story</a>
                     </div><!-- ./column -->
-                    <div class="column text--centered">
+                    <div class="column text--centered mobile-mg-top--medium">
                         <div class="video">
                             <img src="./images/img6.jpg" alt="Video Thumbnail" class="video__thumbnail">
 
-                            <a href="https://player.vimeo.com/video/165424115?autoplay=false" class="iframe-lightbox-link video__play"
-                                data-padding-bottom="56.25%" aria-hidden="true" rel="lightbox">
+                            <a href="https://player.vimeo.com/video/165424115?autoplay=false"
+                                class="iframe-lightbox-link video__play" data-padding-bottom="56.25%" aria-hidden="true"
+                                rel="lightbox">
                                 <span class="video__play__icon">
                                     <i class="fas fa-play-circle"></i>
                                 </span>

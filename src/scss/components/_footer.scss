@@ -37,6 +37,11 @@
                     color: #fff;
                     font-size: 1.3rem;
                     color: $light-green;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        color: $accent-color--primary;
+                    }
                 }
 
                 &:not(:last-child) {
@@ -58,7 +63,7 @@
 
     &__address {
         text-align: right;
-        
+
         @include respond(small) {
             text-align: left;
         }

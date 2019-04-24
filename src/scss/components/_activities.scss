@@ -6,14 +6,19 @@
 
 .activity {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     &__date {
         background-color: $light-blue;
-        padding: 1rem .5rem;
-        margin-right: 3rem;
+        padding: 1rem;
+        margin-right: 1.5rem;
         color: $secondary-color;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 5rem;
 
         span.month,
         span.day {
@@ -23,21 +28,29 @@
         }
 
         span.month {
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             text-transform: uppercase;
-            font-size: .8rem;
+            font-size: 1rem;
+            letter-spacing: -.8px;
         }
 
         span.day {
             text-transform: uppercase;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+
         }
     }
 
     &__title {
         color: $accent-color--primary;
         font-size: 1.4rem;
-        margin-bottom: 1rem;
+        margin-bottom: .6rem;
+        text-transform: uppercase;
+        // font-family: 'PT Serif', serif;
+        font-family: $font-text;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -.5px;
     }
 
     &__meta p {

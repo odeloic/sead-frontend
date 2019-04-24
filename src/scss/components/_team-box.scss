@@ -7,9 +7,13 @@
     &__member:nth-child(2) {
         flex-basis: 35%;
 
+
+
         @include respond(small) {
             flex-basis: 100%;
         }
+
+
     }
 
     &__member {

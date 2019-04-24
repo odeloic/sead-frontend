@@ -2,23 +2,50 @@
     position: relative;
     background-color: $light-green;
     padding: 2rem 5rem;
-    display: flex;
-    align-items: center;
+
+    @include respond(small) {
+        display: flex;
+        padding: 3rem 3rem;
+        padding-right: 0;
+    }
+
+    &__search,
+    &__navigation {
+        margin-top: 2rem;
+
+        @include respond(small) {
+            display: none;
+        }
+
+    }
+
+
+    &__search {
+        &.mobile-menu-open {
+            display: block !important;
+            position: absolute;
+            top: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+        }
+    }
 
     .site-logo {
-        margin-right: 10rem;
-
-        
-
+        text-align: center;
 
         &__img {
-            width: 8rem;
+            width: 7rem;
+
+            @include respond(small) {
+                width: 6rem;
+            }
         }
     }
 
     .search {
-        display: none;
+        text-align: center;
     }
 
-    
+
 }

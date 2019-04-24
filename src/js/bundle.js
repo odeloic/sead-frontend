@@ -4,29 +4,21 @@ var mySwiper = new Swiper(".slider", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
-
+    slidesPerView: 1,
+    spaceBetween: 0,
     // If we need pagination
     pagination: {
         el: ".swiper-pagination"
     },
-
     // Navigation arrows
     navigation: {
         nextEl: ".slider-control-button--next",
         prevEl: ".slider-control-button--prev"
     },
-
     effect: "coverflow",
     autoplay: {
         delay: 5000
     }
-
-    // on: {
-    //     slideChange: function () {
-    //         /* do something */
-    //         console.log(this.slideActiveClass);
-    //     },
-    // }
 });
 
 var activitiesSwiper = new Swiper(".activities-slider", {
@@ -35,6 +27,12 @@ var activitiesSwiper = new Swiper(".activities-slider", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        }
     },
     navigation: {
         nextEl: ".slider-control-button--next",
@@ -81,4 +79,4 @@ const mobileNavigation = document.querySelector('.mobile-navigation');
 menuIcon.addEventListener('click', function (e) {
     this.classList.toggle('mobile-menu-open');
     mobileNavigation.classList.toggle('mobile-menu-open');
-})   
+})

@@ -1,20 +1,19 @@
 .navigation {
-    
-    
-    
+
     @include respond(small) {
         display: none;
     }
 
     ul {
         list-style: none;
+        display: flex;
+        justify-content: center;
 
         li {
             display: inline-block;
             position: relative;
             padding-bottom: 1rem;
             padding-top: 1rem;
-
 
             &::after {
                 content: '';
@@ -30,13 +29,13 @@
             }
 
             &:not(:last-child) {
-                margin-right: 8rem;
+                margin-right: 3.5rem;
 
                 @include respond(big) {
                     margin-right: 5rem;
                 }
 
-                
+
             }
 
 

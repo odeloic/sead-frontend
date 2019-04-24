@@ -4,12 +4,14 @@
     }
 
     &__title {
-        font-family: $font-text;
+        font-family: $font-headings;
+        letter-spacing: -5px;
         font-size: 6rem;
         color: $gray-color--light;
         margin-bottom: 4rem;
         font-weight: 700;
         line-height: 1.2;
+
 
 
 
@@ -19,6 +21,7 @@
 
         @include respond(small) {
             font-size: 4rem;
+            letter-spacing: -2px;
         }
 
 

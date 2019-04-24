@@ -11,14 +11,69 @@
 
 <body>
     <header class="header">
-        <!-- site logo -->
-        <div class="site-logo">
-            <a href="index.html">
-                <img src="./images/logo-sead.png" alt="SEAD Logo" class="site-logo__img">
-            </a>
+        <!-- <div class="container"> -->
+        <div class="columns is-vcentered is-centered">
+            <div class="column is-one-quarter header__Logo">
+                <!-- site logo -->
+                <div class="site-logo">
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="SEAD Logo" class="site-logo__img">
+                    </a>
+                </div>
+            </div>
+            <!-- logo -->
+
+            <div class="column header__navigation">
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About sead</a>
+                        </li>
+
+                        <li>
+                            <a href="approach.html">our approach</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Media Center</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- navigation -->
+
+            <div class="column is-one-quarter header__search">
+                <div class="search">
+
+                    <form class="search__form">
+                        <input type="search" class="search__form__input" placeholder="Search 'something' on website...">
+                        <input type="submit" value="Search" class="search__form__submit">
+                    </form>
+                </div>
+            </div>
+            <!-- search-box -->
+
         </div>
+        <!-- </div> -->
+
         <!-- navigation -->
-        <nav class="navigation">
+
+        <a class="menu-icon">
+            <div class="menu-icon__bars">
+                <span class="menu-icon__bars__top"></span>
+                <span class="menu-icon__bars__middle"></span>
+                <span class="menu-icon__bars__bottom"></span>
+            </div>
+        </a><!-- mobile-icon -->
+
+        <nav class="mobile-navigation">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -40,20 +95,12 @@
                     <a href="#">Contact us</a>
                 </li>
             </ul>
-        </nav>
 
-
-        <div class="search">
-            <span class="search__icon"></span>
             <form class="search__form">
-                <input type="search" class="search__form__input">
-                <input type="submit" value="Search">
+                <input type="search" class="search__form__input" placeholder="Search 'something' on website...">
+                <input type="submit" value="Search" class="search__form__submit">
             </form>
-        </div>
-        <div class="partner-banner">
-            <h2 class="partner-banner__heading">In partnership with</h2>
-            <img src="./images/Rwanda-Development-Board-Logo.png" alt="RDB Logo" class="partner-banner__logo">
-        </div>
+        </nav>
     </header>
     <!-- main -->
     <main class="main">

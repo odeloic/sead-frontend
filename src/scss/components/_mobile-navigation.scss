@@ -9,7 +9,7 @@
     visibility: hidden;
     transform: translateX(100%);
     transition: all .2s ease-out;
-    
+
     ul {
         height: 100%;
         width: 100%;
@@ -17,12 +17,12 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        
+
         li {
             &:not(:last-child) {
                 margin-bottom: 3rem;
             }
-            
+
             a {
                 font-family: $font-headings;
                 text-transform: uppercase;
@@ -30,9 +30,29 @@
             }
         }
     }
-    
+
     &.mobile-menu-open {
         visibility: visible;
         transform: translate(0);
+    }
+
+    .search__form {
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        input[type="search"] {
+            width: 60%;
+            height: 3.8rem;
+        }
+
+        input[type="submit"] {
+            font-size: 1.4rem;
+        }
     }
 }
