@@ -4,18 +4,24 @@
     }
 
     &__input {
-        border: 1px solid $accent-color--primary;
+        border: 2px solid $primary-color--dark;
         padding: .8rem;
         font-family: inherit;
-        background-color: #014527;
+        background-color: #fff;
         margin-right: .5rem;
         font-size: 1.2rem;
-        color: $light-blue;
-        font-family: 500;
+        color: $gray-color--dark;
+        font-weight: 500;
         width: 70%;
+        transition: all .2s ease;
 
         &::placeholder {
-            color: $light-green;
+            color: $gray-color;
+            font-style: italic;
+        }
+
+        &:focus {
+            border-width: 3px;
         }
     }
 

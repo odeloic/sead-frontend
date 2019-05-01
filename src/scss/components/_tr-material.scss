@@ -1,0 +1,44 @@
+.tr-material {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+
+    @include respond(small) {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    &__icon {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.1rem;
+        color: $gray-color--dark;
+        transition: all .2s ease;
+        font-family: $font-text;
+        text-transform: uppercase;
+
+        strong {
+            font-weight: 700;
+        }
+
+        &:hover {
+            color: $primary-color--light;
+        }
+
+        @include respond(small) {
+            font-size: 1.5rem;
+        }
+
+
+    }
+
+
+}
