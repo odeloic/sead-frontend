@@ -11,8 +11,6 @@
 
     &__search,
     &__navigation {
-        margin-top: 2rem;
-
         @include respond(small) {
             display: none;
         }

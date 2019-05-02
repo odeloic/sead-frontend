@@ -4,7 +4,7 @@
     }
 
     &__input {
-        border: 2px solid $primary-color--dark;
+        border: 1px solid $primary-color--dark;
         padding: .8rem;
         font-family: inherit;
         background-color: #fff;
@@ -17,7 +17,6 @@
 
         &::placeholder {
             color: $gray-color;
-            font-style: italic;
         }
 
         &:focus {
@@ -35,6 +34,12 @@
         text-transform: uppercase;
         font-weight: 700;
         cursor: pointer;
+        transition: all .2s ease;
+
+
+        &:hover {
+            background-color: $primary-color--dark;
+        }
 
     }
 }

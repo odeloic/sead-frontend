@@ -48,9 +48,15 @@
         position: absolute;
         top: 10rem;
         left: 13rem;
-        z-index: 5;
+        z-index: 4;
         color: $accent-color--primary;
         font-size: 1.6rem;
         text-transform: uppercase;
+
+
+        @include respond(small) {
+            top: 2rem;
+            left: 3rem;
+        }
     }
 }

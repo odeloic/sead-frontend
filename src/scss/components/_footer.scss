@@ -62,7 +62,6 @@
     }
 
     &__address {
-        text-align: right;
 
         @include respond(small) {
             text-align: left;
