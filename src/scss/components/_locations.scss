@@ -115,30 +115,6 @@
 
 
 .details-placeholder {
-    padding: 4.5rem 3.5rem;
-    background-color: $light-blue;
     text-align: center;
     transition: all 1s ease;
-    margin-top: 5rem;
-    text-align: left;
-
-    @include respond(small) {
-        padding: 3rem;
-    }
-
-    h4 {
-        color: $gray-color--dark;
-        font-size: 1.3rem;
-        margin-bottom: 1.8rem;
-        text-transform: uppercase;
-    }
-
-    span {
-        color: $alternative-green;
-        font-family: $font-headings;
-        font-size: 1.3rem;
-        margin-bottom: 1.2rem;
-        display: inline-block;
-    }
-
 }

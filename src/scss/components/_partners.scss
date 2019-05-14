@@ -1,6 +1,7 @@
 .partners {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     @include respond(small) {
         margin-top: 5rem;
@@ -9,16 +10,14 @@
 }
 
 .partner__logo {
-    flex-basis: 20%;
+    flex-basis: 33.3333333333%;
     margin-bottom: 5rem;
-    margin-right: 3rem;
 
     @include respond(small) {
-        margin-bottom: 8rem;
-        flex-basis: 26%;
-
+        margin-bottom: 3rem;
+        flex-basis: 33.3333333333%;
+        padding: 0 2rem;
     }
-
 
     img {
         width: 80%;
