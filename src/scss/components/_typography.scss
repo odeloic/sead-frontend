@@ -33,6 +33,16 @@ p {
     line-height: 1.4;
 }
 
+
+.heading--tertiary {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    line-height: 1.4;
+    color: $secondary-color;
+}
+
 .heading--green {
     color: $primary-color;
 }
