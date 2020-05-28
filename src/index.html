@@ -25,24 +25,35 @@
 
             <div class="column header__navigation">
                 <nav class="navigation">
-                    <ul>
-                        <li>
+                    <ul class="navigation__list">
+                        <li class="navigation__elt">
                             <a href="index.html">Home</a>
                         </li>
 
-                        <li>
+                        <li class="navigation__elt">
                             <a href="about.html">About sead</a>
                         </li>
 
-                        <li>
+                        <li class="navigation__elt">
                             <a href="approach.html">our approach</a>
                         </li>
 
-                        <li>
+                        <li class="navigation__elt has-sub-menu">
                             <a href="#">Media Center</a>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-menu__elt">
+                                    <a href="#">Newsletter</a>
+                                </li>
+                                <li class="navigation__sub-menu__elt">
+                                    <a href="#">Gallery</a>
+                                </li>
+                                <li class="navigation__sub-menu__elt">
+                                    <a href="#">Course</a>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li>
+                        <li class="navigation__elt">
                             <a href="#">Contact us</a>
                         </li>
                     </ul>
@@ -73,24 +84,36 @@
         </a><!-- mobile-icon -->
 
         <nav class="mobile-navigation">
-            <ul>
-                <li>
+            <ul class="navigation__list">
+                <li class="navigation__elt">
                     <a href="index.html">Home</a>
                 </li>
 
-                <li>
+                <li class="navigation__elt">
                     <a href="about.html">About sead</a>
                 </li>
 
-                <li>
+                <li class="navigation__elt">
                     <a href="approach.html">our approach</a>
                 </li>
 
-                <li>
+                <li class="navigation__elt has-sub-menu">
                     <a href="#">Media Center</a>
+                    <ul class="navigation__sub-menu">
+                        <li class="navigation__sub-menu__elt">
+                            <a href="#">Newsletter</a>
+                        </li>
+                        <li class="navigation__sub-menu__elt">
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li class="navigation__sub-menu__elt">
+                            <a href="#">Course</a>
+                        </li>
+                    </ul>
+
                 </li>
 
-                <li>
+                <li class="navigation__elt">
                     <a href="#">Contact us</a>
                 </li>
             </ul>
@@ -189,106 +212,113 @@
         <!-- section-->
         <section class="section section--no-padding">
             <div class="columns">
-                <div class="column bg-light-blue news-section is-two-thirds">
-                    <h2 class="heading--primary heading--blue mg-bottom--medium mg-top--big">
-                        Latest News
-                    </h2>
-                    <div class="columns is-multiline">
-                        <div class="column">
-                            <div class="news-card">
-                                <img src="./images/img9.jpg" alt="" class="news-card__thumbnail">
-                                <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
-                                <span class="news-card__date">2019.01.02</span>
+                <div class="column is-two-thirds no-padding-top no-padding-right no-padding-bottom flx-container flx-container--vertical">
+                    <div class="news-section bg-light-blue">
+                        <h2 class="heading--primary heading--blue mg-bottom--medium mg-top--big">
+                            Latest News
+                        </h2>
+                        <div class="columns is-multiline">
+                            <div class="column">
+                                <div class="news-card">
+                                    <img src="./images/img9.jpg" alt="" class="news-card__thumbnail">
+                                    <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
+                                    <span class="news-card__date">2019.01.02</span>
+                                </div>
                             </div>
-                        </div>
-                        <!--.news-card-->
-                        <div class="column">
-                            <div class="news-card">
-                                <img src="./images/img2.jpg" alt="" class="news-card__thumbnail">
-                                <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
-                                <span class="news-card__date">2019.01.05</span>
+                            <!--.news-card-->
+                            <div class="column">
+                                <div class="news-card">
+                                    <img src="./images/img2.jpg" alt="" class="news-card__thumbnail">
+                                    <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
+                                    <span class="news-card__date">2019.01.05</span>
+                                </div>
                             </div>
-                        </div>
-                        <!--.news-card-->
+                            <!--.news-card-->
 
-                        <div class="column">
-                            <div class="news-card">
-                                <img src="./images/img2.jpg" alt="" class="news-card__thumbnail">
-                                <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
-                                <span class="news-card__date">2019.01.05</span>
+                            <div class="column">
+                                <div class="news-card">
+                                    <img src="./images/img2.jpg" alt="" class="news-card__thumbnail">
+                                    <h4 class="news-card__title">Unveiling our new activities calendar for 2019</h4>
+                                    <span class="news-card__date">2019.01.05</span>
+                                </div>
                             </div>
+                            <!--.news-card-->
                         </div>
-                        <!--.news-card-->
+                        <a href="./blog.html" class="link link--goto">Read all articles</a>
                     </div>
-                    <a href="./blog.html" class="link link--goto">Read all articles</a>
                 </div>
                 <div class="column activities">
                     <h3 class="heading--secondary heading--light mg-bottom--medium mg-top--big">Latest activities</h3>
                     <div class="activity">
-                        <div class="activity__date">
-                            <p><span>2/22</span> <span class="separator">-</span> <span>2/28</span></p>
-                        </div><!-- /date -->
+                        <p class="activity__date">2/05/2020 - 4/05/2020</p>
+                        <a href="" class="activity__title">
+                            <h4>Northern Province TVETs workshop</h4>
+                            <span>More details</span>
+                        </a>
                         <div class="activity__meta">
-                            <h4 class="activity__title">Northern Province TVETs workshop</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. </p>
-                            <!-- <p class="activity__period">
-                                <span>February 12th</span>
-                                <span>February 15th</span>
-                            </p> -->
                         </div><!-- / meta -->
-
-
                     </div><!-- /activity -->
-
                     <div class="activity">
-                        <div class="activity__date">
-                            <p><span>2/22</span> <span class="separator">-</span> <span>2/28</span></p>
-                        </div><!-- /date -->
+                        <p class="activity__date">2/05/2020 - 4/05/2020</p>
+                        <a href="" class="activity__title">
+                            <h4>Northern Province TVETs workshop</h4>
+                            <span>More details</span>
+                        </a>
                         <div class="activity__meta">
-                            <h4 class="activity__title">Northern Province TVETs workshop</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. </p>
                         </div><!-- / meta -->
-
                     </div><!-- /activity -->
-
                     <div class="activity">
-                        <div class="activity__date">
-                            <p><span>2/22</span></p>
-                        </div><!-- /date -->
+                        <p class="activity__date">2/05/2020 - 4/05/2020</p>
+                        <a href="" class="activity__title">
+                            <h4>Northern Province TVETs workshop</h4>
+                            <span>More details</span>
+                        </a>
                         <div class="activity__meta">
-                            <h4 class="activity__title">Northern Province TVETs workshop</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. </p>
                         </div><!-- / meta -->
                     </div><!-- /activity -->
-
                     <div class="activity">
-                        <div class="activity__date">
-                            <p><span>2/22</span></p>
-                        </div><!-- /date -->
+                        <p class="activity__date">2/05/2020 - 4/05/2020</p>
+                        <a href="" class="activity__title">
+                            <h4>Northern Province TVETs workshop</h4>
+                            <span>More details</span>
+                        </a>
                         <div class="activity__meta">
-                            <h4 class="activity__title">Northern Province TVETs workshop</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. </p>
                         </div><!-- / meta -->
                     </div><!-- /activity -->
-
                     <div class="activity">
-                        <div class="activity__date">
-                            <span class="month">February</span>
-                            <span class="day">12</span>
-                        </div><!-- /date -->
+                        <p class="activity__date">2/05/2020 - 4/05/2020</p>
+                        <a href="" class="activity__title">
+                            <h4>Northern Province TVETs workshop</h4>
+                            <span>More details</span>
+                        </a>
                         <div class="activity__meta">
-                            <h4 class="activity__title">Northern Province TVETs workshop</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. </p>
                         </div><!-- / meta -->
                     </div><!-- /activity -->
-
-
                 </div><!-- /activities -->
+            </div>
+        </section>
+        <section class="section section--padded section--padded pd-top--big pd-bottom--big bg-gray">
+            <div class="container">
+                <h2 class="heading--primary heading--green mg-bottom--medium">Testimonials</h2>
+                <div class="testimonials swiper-container">
+                    <div class="testimonials__slider swiper-wrapper">
+                        <img src="./images/quotes/quote1.jpg" alt="" class="testimonials__img swiper-slide">
+                        <img src="./images/quotes/quote1.jpg" alt="" class="testimonials__img swiper-slide">
+                        <img src="./images/quotes/quote1.jpg" alt="" class="testimonials__img swiper-slide">
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
         <section class="section section--padded section--padded pd-top--big pd-bottom--big">
@@ -302,7 +332,6 @@
                             <div class="partner__logo">
                                 <img src="./images/Rwanda-Development-Board-Logo.png" alt="">
                             </div><!-- /partner__logo -->
-
                             <div class="partner__logo">
                                 <img src="./images/Mott-macdonald-new-logo.png" alt="">
                             </div><!-- /partner__logo -->
@@ -322,8 +351,6 @@
                             <div class="partner__logo">
                                 <img src="./images/snv.png" alt="">
                             </div><!-- /partner__logo -->
-
-
                             <div class="partner__logo">
                                 <img src="./images/Stellenbosch-university.png" alt="">
                             </div><!-- /partner__logo -->

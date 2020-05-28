@@ -57,3 +57,33 @@
 .timeline-Widget {
     background-color: $primary-color--light !important;
 }
+
+.no-padding-right {
+    padding-right: 0rem;
+}
+
+.no-padding-top {
+    padding-top: 0rem;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0rem;
+}
+
+.flx-container {
+    display: flex;
+    width: 100%;
+
+    &--vertical {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    & > div {
+        flex: 1;
+    }
+}
+
+.f-wrap {
+    
+}
